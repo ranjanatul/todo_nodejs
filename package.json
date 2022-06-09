@@ -1,0 +1,19 @@
+{
+  "name": "todo_nodejs",
+  "version": "1.0.0",
+  "description": "todo app using node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjanatul/todo_nodejs.git"
+  },
+  "author": "atulr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ranjanatul/todo_nodejs/issues"
+  },
+  "homepage": "https://github.com/ranjanatul/todo_nodejs#readme"
+}
