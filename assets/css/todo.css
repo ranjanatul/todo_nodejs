@@ -1,0 +1,194 @@
+*, body{
+  padding: 0;
+  margin: auto;
+}
+body{
+  background-image: linear-gradient(45deg,lightgrey, black);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  background-color: white;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-size: 2.5rem;
+  font-family: 'monospace';
+}
+
+hr {
+  width: 100%;
+}
+
+.description {
+padding-left: 10px;
+padding-top: 2px;
+/* display: flex;
+flex-direction: column; */
+width: 100%;
+}
+
+.desc_label {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+}
+
+.desc_input {
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.desc_input_box {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.ctg_container {
+  display: flex;
+  width: 100%;
+}
+.category, .due_date {
+  padding-left: 10px;
+padding-top: 2px;
+  margin: 0!important;
+  width: 50%;
+}
+
+.category {
+  border-right: 1px solid;
+  margin-right: 2px;
+  padding-right: 5px;
+}
+.due_date {
+  border-left: 1px solid;
+}
+
+.select {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+.action-btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.add-btn, .delete-btn {
+  width: 110px;
+  display: flex;
+  border: 1px solid;
+  height: 35px;
+  margin: 0 2px;
+  
+}
+
+.add-btn {
+  background-color: grey;
+  border-color: grey;
+}
+
+.delete-btn {
+  background-color: #d73333;
+  border-color: #d73333;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 0.7rem;
+  color: aliceblue;
+  height: inherit;
+  width: inherit;
+}
+
+.icon {
+  font-style: oblique;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.task-lists {
+  width: 100%;
+}
+
+.task-list {
+  display: flex;
+  padding: 10px 0;
+}
+.checkbox {
+  width: 5%;
+  display: flex;
+}
+.task_desc {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.desc:first-letter {
+  text-transform: uppercase;
+}
+
+.task_ctg {
+  width: 15%;
+  display: flex;
+}
+
+.tag {
+  width: 75px;
+  height: 24px;
+  border: 1px solid;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work {
+  background-color: purple;
+}
+
+.personal {
+  background-color: rgb(7, 108, 216);
+}
+
+.other {
+  background-color: #d73333;
+}
+
+.school {
+  background-color: green;
+}
+
+.cleaning {
+  background-color: tomato;
+}
+
+.notask {
+  width: 100%;
+    height: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: cursive;
+  background-image: url('/images/notask.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}

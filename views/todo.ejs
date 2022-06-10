@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/todo.css" />
+    <script
+      src="https://kit.fontawesome.com/3a855a35dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">TODO App</div>
+      <hr />
+      <!-- <form action="/add"> -->
+      <div class="description">
+        <div class="desc_label"> description </div>
+        <div class="desc_input">
+          <input
+            id="description"
+            class="desc_input_box"
+            type="text"
+            name="description"
+            placeholder="What do you need to do?"
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="ctg_container">
+        <div class="category">
+          <div class="desc_label"> category </div>
+          <div class="desc_input">
+            <select class="select" id="category" name="category">
+              <option value="">Choose a category</option>
+              <option value="personal">Personal</option>
+              <option value="work">Work</option>
+              <option value="school">School</option>
+              <option value="cleaning">Cleaning</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="due_date">
+          <div class="desc_label"> due date </div>
+          <div class="desc_input">
+            <input
+              id="due_date"
+              class="desc_input_box"
+              type="date"
+              name="due_date"
+            />
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="action-btn">
+        <div class="add-btn">
+          <button class="btn" id="add">
+            <i class="fas fa-plus icon"></i>add task
+          </button>
+        </div>
+        <div class="delete-btn">
+          <button class="btn" id="delete">
+            <i class="fas fa-trash-alt icon2"></i> delete tasks
+          </button>
+        </div>
+      </div>
+      <!-- </form> -->
+      <hr />
+      <div class="task-lists">
+        <% if (todoList.length > 0) {todoList.map(({description, category,
+        dueDate, _id}) => { %>
+        <div class="task-list" id="<%= _id %>">
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              class="input_checkbox"
+              id="task_action"
+              name="task_action"
+            />
+          </div>
+          <div class="task_desc">
+            <p class="desc"> <%= description %> </p>
+            <p><i class="fas fa-calendar-alt icon"></i><%= dueDate %></p>
+          </div>
+          <div class="task_ctg">
+            <p class="tag <%= category %>"><%= category %></p>
+          </div>
+        </div>
+        <% })} %> <% if (todoList == 0) { %>
+        <div class="task-list">
+          <p class="notask">Nothing to do.</p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/todo.js"></script>
+  </body>
+</html>
